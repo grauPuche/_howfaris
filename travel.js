@@ -4,7 +4,6 @@
 var prompt = require('prompt');
 var geodist = require('geodist');
 var where = require('node-where');
-var ip = require('ip');
 const dns = require('dns');
 const extIP = require('external-ip');
 

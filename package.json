@@ -4,7 +4,7 @@
   "description": "distance traveled to get to a certain website",
   "main": "travel.js",
   "scripts": {
-    "test": "npm howfaris"
+    "test": "npm test"
   },
   "repository": {
     "type": "git",
