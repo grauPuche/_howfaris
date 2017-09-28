@@ -6,9 +6,13 @@ var geodist = require('geodist');
 var where = require('node-where');
 const dns = require('dns');
 const extIP = require('external-ip');
+var colors = require('colors');
+
 
 var latitude;
 var longitude;
+var realPlace;
+var realPlace2;
 var latitude2;
 var longitude2;
 var address;
@@ -62,8 +66,10 @@ function traveling(address) {
 
 			latitude = result.get('lat');
 			longitude = result.get('lng');
+			realPlace = result.get('address');
 
 			// console.log(latitude + "," + longitude);
+			//console.log(realPlace);
 
 			where.is(address, function (err, result) {
 
@@ -71,6 +77,7 @@ function traveling(address) {
 
 					latitude2 = result.get('lat');
 					longitude2 = result.get('lng');
+					realPlace2 = result.get('address');
 
 					// console.log(latitude2 + "," + longitude2);
 
@@ -95,9 +102,14 @@ function forhowlong() {
 
 	});
 	console.log();
+	console.log();	
+	console.log(" " + realPlace.yellow);	
+	console.log("  |");
+	console.log("  |");
+	console.log("  |   You just traveled " + colors.bgWhite.black(" "+dist+" "),"miles!");
+	console.log("  |");
+	console.log("  V");
+	console.log(" " + realPlace2.yellow);
 	console.log();
-	console.log("  You just traveled " + dist + " miles!");
-	console.log();
-	console.log();
-
+	console.log();	
 }
