@@ -1,7 +1,9 @@
+# howFarIs
+
 ![gif's alt tex](https://media.giphy.com/media/3ohhwFZkLYITxBft0k/giphy.gif)
 
 *howFar is a node js application/script that provides the distance between the user and any website server.*
-
+---
 The way it works is by geo-locating any website through its IP address and calculating the distance between these. It's very simple. 
 
 This was an assignment of the [understanding networks][a1] class and its purpose id to illustrate the distance that data physically travels every time you visit a website.
@@ -9,7 +11,7 @@ This was an assignment of the [understanding networks][a1] class and its purpose
 ![alt text](http://graupuche.info/video/39_2.gif)
 
 *me trying to filter information*
-
+---
 To get all this information, I first tried to read out of the `traceroute` command but my end goal was to have the whole system in one command and one prompt. My skill level at this point is not as high as I would like it to be for this type of script, so instead of reading all the IP
 
 
